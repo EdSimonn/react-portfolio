@@ -1,0 +1,41 @@
+.pl {
+  padding: 50px 100px;
+  /* T & B, L & R */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.pl-texts {
+  width: 65%;
+  /* manage the pl txts length */
+}
+
+.pl-title {
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.pl-desc {
+  margin: 20px 0px;
+}
+
+.pl-list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  /* to prvnt ovrflow */
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 480px) {
+  .pl {
+    padding: 10px;
+    /* flex-direction: column; */
+  }
+
+  .pl-texts {
+    width: 100%;
+  }
+}

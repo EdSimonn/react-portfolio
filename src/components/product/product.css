@@ -1,0 +1,50 @@
+.p {
+  width: 30%;
+  height: 40vh;
+  margin: 20px 10px;
+  border: 2px solid rgb(243, 242, 242);
+  border-radius: 10px 10px 0px 0px;
+  /* 10px for R & L TOP, 0px for R & L BUTTOM of th card  */
+  overflow: hidden;
+  /* to prvnt imag ovrflow */
+}
+
+.p-browser {
+  /* to mak th card look lik browsrs, so top part of th card is gry-ish */
+  height: 20px;
+  background-color: rgb(243, 242, 242);
+  display: flex;
+  align-items: center;
+  /* to kp th brwsr dispaly at th top showing during hovr */
+  position: sticky;
+  z-index: 2;
+}
+
+.p-circle {
+  /* the 3 small circl abov th card to giv it that browsr look   */
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  margin: 2px;
+  background-color: white;
+}
+
+.p-img {
+  width: 100%;
+  transition: all 10s ease;
+}
+
+.p:hover .p-img {
+  /* a tarmsition animation efffect when images in card ar hovered ovr */
+  transform: translateY(-100%);
+}
+
+/* chrom xtension - fullpag */
+
+@media screen and (max-width: 480px) {
+  .p {
+    width: 40%;
+    height: 20vh;
+    /* flex-direction: column; */
+  }
+}
